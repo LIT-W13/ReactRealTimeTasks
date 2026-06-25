@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
 using ReactRealTimeTasks.Data;
 using ReactRealTimeTasks.Web.Models;
 using System.Security.Claims;
@@ -43,6 +44,10 @@ namespace ReactRealTimeTasks.Web.Controllers
             return user;
         }
 
+        public void Foobar()
+        {
+            Console.WriteLine("Hello world!");
+        }
 
         [HttpGet]
         [Route("getcurrentuser")]
