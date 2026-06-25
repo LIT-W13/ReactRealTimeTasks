@@ -27,7 +27,7 @@ namespace ReactRealTimeTasks.Web
 
             Clients.All.SendAsync("RenderTasks", tasks.Select(t => new
             {
-                Id = t.Id,
+                t.Id,
                 Title = t.Title,
                 HandledBy = t.HandledBy,
                 UserDoingIt = t.User != null ? $"{t.User.FirstName}-{t.User.LastName}" : null,
