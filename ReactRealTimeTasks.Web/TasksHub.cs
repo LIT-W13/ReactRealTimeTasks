@@ -30,7 +30,7 @@ namespace ReactRealTimeTasks.Web
                 Id = t.Id,
                 Title = t.Title,
                 HandledBy = t.HandledBy,
-                UserDoingIt = t.User != null ? $"{t.User.FirstName} {t.User.LastName}" : null,
+                UserDoingIt = t.User != null ? $"{t.User.FirstName}-{t.User.LastName}" : null,
             }));
         }
 
