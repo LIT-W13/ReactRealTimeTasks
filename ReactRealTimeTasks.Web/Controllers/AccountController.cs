@@ -48,6 +48,7 @@ namespace ReactRealTimeTasks.Web.Controllers
         [Route("getcurrentuser")]
         public User GetCurrentUser()
         {
+            //checks if current user is logged in....
             if (!User.Identity.IsAuthenticated)
             {
                 return null;
