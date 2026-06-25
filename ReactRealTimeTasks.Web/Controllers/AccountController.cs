@@ -43,6 +43,7 @@ namespace ReactRealTimeTasks.Web.Controllers
             return user;
         }
 
+
         [HttpGet]
         [Route("getcurrentuser")]
         public User GetCurrentUser()
